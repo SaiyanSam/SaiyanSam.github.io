@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Personal research website focused on machine learning, computer vision, robot perception, and robot learning."
+    >
+
+    <title>Research Portfolio</title>
+
+    <!-- Layout and typography shared by both themes -->
+    <link rel="stylesheet" href="base.css">
+
+    <!-- Only theme colours are switched -->
+    <link
+        id="theme-stylesheet"
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- Apply saved theme before page rendering -->
+    <script>
+        (() => {
+            const savedTheme =
+                localStorage.getItem("portfolio-theme");
+
+            const prefersDark =
+                window.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                ).matches;
+
+            const theme =
+                savedTheme ||
+                (prefersDark ? "dark" : "light");
+
+            document.documentElement.dataset.theme = theme;
+
+            const stylesheet =
+                document.getElementById("theme-stylesheet");
+
+            stylesheet.href =
+                theme === "dark"
+                    ? "style_dark.css"
+                    : "style.css";
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <!-- Left -->
+            <a
+                href="#home"
+                class="nav-name"
+                id="nav-name"
+            >
+                Portfolio
+            </a>
+
+            <!-- Centre -->
+            <div
+                class="theme-switcher"
+                aria-label="Website colour theme"
+            >
+                <button
+                    class="theme-option"
+                    id="light-theme-option"
+                    type="button"
+                    data-theme-option="light"
+                    aria-label="Use light theme"
+                >
+                    Light
+                </button>
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    role="switch"
+                    aria-checked="false"
+                    aria-label="Switch to dark theme"
+                    title="Switch theme"
+                >
+                    <span
+                        class="theme-toggle-track"
+                        aria-hidden="true"
+                    >
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+
+                <button
+                    class="theme-option"
+                    id="dark-theme-option"
+                    type="button"
+                    data-theme-option="dark"
+                    aria-label="Use dark theme"
+                >
+                    Dark
+                </button>
+            </div>
+
+            <!-- Right -->
+            <div class="nav-actions">
+                <div
+                    class="nav-links"
+                    id="nav-links"
+                >
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <button
+                    class="menu-button"
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section
+            class="hero section"
+            id="home"
+        >
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <p
+                        class="eyebrow"
+                        id="position"
+                    >
+                        Researcher
+                    </p>
+
+                    <h1 id="name">
+                        Your Name
+                    </h1>
+
+                    <p
+                        class="hero-tagline"
+                        id="tagline"
+                    >
+                        Machine Learning · Computer Vision · Robot Perception
+                    </p>
+
+                    <p
+                        class="hero-description"
+                        id="research-statement"
+                    >
+                        Loading profile...
+                    </p>
+
+                    <div
+                        class="social-links"
+                        id="social-links"
+                    ></div>
+                </div>
+
+                <div class="profile-image-wrapper">
+                    <img
+                        id="profile-image"
+                        class="profile-image"
+                        src="assets/profile.jpg"
+                        alt="Profile photograph"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section
+            class="section section-muted"
+            id="about"
+        >
+            <div class="container narrow-container">
+                <p class="section-label">
+                    About
+                </p>
+
+                <h2>
+                    Research interests
+                </h2>
+
+                <p
+                    class="about-text"
+                    id="about-text"
+                >
+                    Loading profile...
+                </p>
+
+                <div
+                    class="interest-list"
+                    id="research-interests"
+                ></div>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section
+            class="section"
+            id="research"
+        >
+            <div class="container">
+                <p class="section-label">
+                    Selected work
+                </p>
+
+                <h2>
+                    Research and projects
+                </h2>
+
+                <div
+                    class="project-grid"
+                    id="project-grid"
+                >
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section
+            class="section section-muted"
+            id="publications"
+        >
+            <div class="container narrow-container">
+                <p class="section-label">
+                    Research output
+                </p>
+
+                <h2>
+                    Publications and preprints
+                </h2>
+
+                <div
+                    class="publication-list"
+                    id="publication-list"
+                >
+                    <p>Loading publications...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section
+            class="section contact-section"
+            id="contact"
+        >
+            <div class="container narrow-container">
+                <p class="section-label">
+                    Contact
+                </p>
+
+                <h2>
+                    Let us connect
+                </h2>
+
+                <p>
+                    I am interested in research opportunities and
+                    collaborations in machine learning, computer vision,
+                    robot perception, and autonomous systems.
+                </p>
+
+                <a
+                    class="primary-button"
+                    id="contact-email"
+                    href="#"
+                >
+                    Email me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>
+                © <span id="current-year"></span>
+                <span id="footer-name">Your Name</span>
+            </p>
+
+            <p>
+                Hosted with GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

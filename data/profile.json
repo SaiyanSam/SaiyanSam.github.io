@@ -1,0 +1,28 @@
+{
+    "name": "Saurbh Singh Jamwal",
+    "position": "MS by Research, IIT Bombay",
+    "profile_image": "assets/profile.jpg",
+
+    "research_statement":
+    "I work at the intersection of Mahcine Learning, Computer Vision, and Robot Perception.",
+    "about":
+    "My research focuses on enabling autonomous robots to perceive, reason, learn, and operate robustly in complex environments.",
+    "research_interests": [
+        "Machine Learning",
+        "Computer Vision",
+        "Robot Perception",
+        "Robot Learning",
+        "Reinforcement Learning",
+        "Autonomous Systems"
+    ],
+
+    "email": "saurbhjamwal7@gmail.com",
+
+    "github": "https://github.com/SaiyanSam",
+
+    "scholar": "https://scholar.google.com/citations?user=16e7fk8AAAAJ&hl=en",
+
+    "linkedin": "linkedin.com/in/saurbhjamwal/",
+    
+    "cv": "assets/cv.pdf"
+}

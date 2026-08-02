@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Learning to Fly",
+        "subtitle": "Vision-Guided UAV Servoing",
+        "description": "A reinforcement-learning framework for stable UAV visual servoing using compact target-centric observations.",
+        "media": "assets/videos/learning-to-fly.mp4",
+        "tags": [
+            "Reinforcement Learning",
+            "UAV",
+            "Computer Vision"
+        ],
+        "paper": "",
+        "arxiv": "",
+        "code": "",
+        "video": "",
+        "project_page": ""
+    }
+]

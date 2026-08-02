@@ -1,0 +1,33 @@
+:root {
+    --background: #050805;
+    --surface: #0b110b;
+    --card-background: #0b110b;
+    --header-background: rgba(5, 8, 5, 0.94);
+    --footer-background: #030503;
+    --media-background: #020402;
+
+    --text: #b7e88a;
+    --heading: #d5ff9b;
+    --muted: #82ad61;
+
+    --border: #29411f;
+
+    --accent: #9cff38;
+    --accent-hover: #b7ff68;
+    --button-text: #050805;
+
+    --toggle-background: #182313;
+    --toggle-border: #3a5a2c;
+    --toggle-thumb: #9cff38;
+    --toggle-shadow:
+        0 0 10px rgba(156, 255, 56, 0.35);
+
+    --focus-ring: rgba(156, 255, 56, 0.35);
+
+    --max-width: 1120px;
+    --narrow-width: 850px;
+
+    --shadow:
+        0 0 0 1px rgba(156, 255, 56, 0.08),
+        0 18px 45px rgba(0, 0, 0, 0.55);
+}
