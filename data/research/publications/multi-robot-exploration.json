@@ -1,0 +1,27 @@
+{
+    "title": "Decentralized Multi-Robot Exploration with Probabilistic Peer Intent and Multi-hop Plan Propagation",
+    "subtitle": "Decentralized exploration with probabilistic peer-intent reasoning",
+    "status": "ICRA 2027 submission · arXiv preprint",
+    "authors": "Saurbh Singh Jamwal, Nived Chebrolu, Shivaram Kalyanakrishnan",
+    "abstract": "We investigate decentralized multi-robot exploration under limited communication, where robots must coordinate without relying on a centralized global planner. Building on MCTS-based decentralized exploration, the work introduces Probabilistic Peer Intent (PPI), which transforms communicated peer trajectories into a continuous spatial representation of likely future robot activity. This representation informs local planning decisions and helps robots reduce redundant exploration. We also investigate multi-hop plan propagation, allowing information about peer intent to travel beyond direct communication neighbors. Evaluation across simulated environments and team sizes examines the complementary benefits of these mechanisms, alongside physical experiments using three robots in different environments.",
+    "demo": "assets/videos/marvel.mp4",
+    "thumbnail": "assets/images/marvel.png",
+    "arxiv": "https://arxiv.org/abs/2609.22726",
+    "paper": "",
+    "github": "",
+    "tags": [
+        "Multi-Robot Systems",
+        "Decentralized Exploration",
+        "Monte Carlo Tree Search",
+        "Probabilistic Reasoning",
+        "Multi-Agent Coordination"
+    ],
+    "sections": [
+        {
+            "title": "Method Overview",
+            "text": "Describe the proposed method.",
+            "image": "",
+            "caption": ""
+        }
+    ]
+}

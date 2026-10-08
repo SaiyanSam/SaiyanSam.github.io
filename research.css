@@ -1,0 +1,333 @@
+
+.research-section {
+    margin-top: 3rem;
+}
+
+.research-section-header {
+    margin-bottom: 1.5rem;
+}
+
+.research-section-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.research-section-header p {
+    opacity: 0.7;
+}
+
+.research-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.research-tile {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid var(--border-color, #8885);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--card-bg, transparent);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.research-tile:hover {
+    transform: translateY(-4px) scale(1.025);
+    box-shadow: 0 12px 28px #0002;
+    border-color: var(--accent-color, currentColor);
+}
+
+.research-tile:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
+.research-tile-media {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--surface-color, #8882);
+}
+
+.research-tile-media img,
+.research-tile-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.research-media-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    opacity: 0.55;
+}
+
+.research-tile-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1.4rem;
+    flex: 1;
+}
+
+.research-tile-body h4 {
+    font-size: 1.15rem;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.research-tile-body p {
+    line-height: 1.65;
+    opacity: 0.75;
+    margin: 0;
+}
+
+.research-status {
+    font-size: 0.8rem;
+    opacity: 0.65;
+}
+
+.research-tile-action {
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.research-detail-header {
+    border-bottom: 1px solid var(--border-color, #8885);
+}
+
+.research-detail-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.research-back {
+    color: inherit;
+    text-decoration: none;
+}
+
+.research-theme-button {
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color, #8885);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.research-detail-container {
+    width: min(92%, 1120px);
+    margin: 0 auto;
+    padding: 4rem 0 6rem;
+}
+
+.research-detail-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.research-detail-meta {
+    opacity: 0.7;
+    margin-bottom: 0.7rem;
+}
+
+.research-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 2rem 0 3rem;
+}
+
+.research-resource {
+    display: inline-flex;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color, #8885);
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.research-resource:hover:not(.disabled) {
+    border-color: var(--accent-color, currentColor);
+}
+
+.research-resource.disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.research-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.research-demo {
+    aspect-ratio: 16 / 9;
+    background: var(--surface-color, #8882);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.research-demo img,
+.research-demo video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.research-abstract h2,
+.research-content-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.research-abstract p,
+.research-content-section p {
+    line-height: 1.85;
+    white-space: pre-line;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.research-tag {
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--border-color, #8885);
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+
+.research-content-section {
+    margin-top: 4rem;
+}
+
+.research-content-section img {
+    display: block;
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+}
+
+.research-caption {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+    .research-card-grid,
+    .research-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .research-detail-container {
+        padding-top: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .research-tile {
+        transition: none;
+    }
+
+    .research-tile:hover {
+        transform: none;
+    }
+}
+
+
+/* Ongoing research detail layout */
+
+.ongoing-detail .research-tags {
+    margin: 1.5rem 0 2rem;
+}
+
+.ongoing-architecture {
+    margin: 2.5rem 0 3rem;
+    width: 100%;
+}
+
+.ongoing-architecture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    border: 1px solid var(--border-color, #8885);
+    border-radius: 12px;
+}
+
+.ongoing-architecture-placeholder {
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background: var(--surface-color, #8882);
+    border: 1px solid var(--border-color, #8885);
+    border-radius: 12px;
+    opacity: 0.75;
+}
+
+.ongoing-architecture figcaption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.ongoing-information {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.ongoing-information h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ongoing-information p {
+    line-height: 1.85;
+    white-space: pre-line;
+}
+
+@media (max-width: 760px) {
+    .ongoing-information {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .ongoing-architecture-placeholder {
+        min-height: 220px;
+    }
+}

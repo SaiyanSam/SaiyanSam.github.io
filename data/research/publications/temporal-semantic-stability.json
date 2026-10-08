@@ -1,0 +1,20 @@
+{
+    "title": "Understanding Temporal Semantic Stability in Open-Vocabulary UAV Perception through Metric 3D Fusion",
+    "subtitle": "Analyzing semantic stability through persistent world-space observations",
+    "status": "ICVGIP 2026 submission · arXiv preprint",
+    "authors": "Saurbh Singh Jamwal",
+    "abstract": "Frame-wise open-vocabulary semantic predictions from moving UAVs can fluctuate even when observing the same physical scene. This work studies semantic temporal stability by associating observations with persistent 3D world-space locations. A voxel-level evaluation framework examines final semantic agreement, Semantic Belief Drift (SBD), Observation Persistence (OP), and semantic uncertainty. Experiments on UAVid-3D reveal that high aggregate semantic agreement can conceal instability when many voxels are observed only a few times. Persistence-based analysis exposes disagreement across recurrent observations and examines how semantic belief evolves with accumulating evidence. The findings motivate evaluating semantic consistency together with observation support, rather than relying solely on aggregate world-space agreement.",
+    "demo": "",
+    "thumbnail": "",
+    "arxiv": "https://arxiv.org/abs/2608.28665",
+    "paper": "",
+    "github": "",
+    "tags": [
+        "Open-Vocabulary Segmentation",
+        "Temporal Stability",
+        "3D Fusion",
+        "Semantic Perception",
+        "UAV"
+    ],
+    "sections": []
+}

@@ -1,0 +1,16 @@
+{
+    "title": "ResSwarm",
+    "subtitle": "Resilient Decentralized Multi-Robot Coordination",
+    "status": "Ongoing research",
+    "architecture_image": "",
+    "architecture_caption": "",
+    "overview": "Resilient Swarm explores coordination mechanisms for teams of autonomous robots operating with incomplete information, communication limitations, and changing environmental conditions. The project investigates how decentralized teams can maintain useful collective behavior without continuous global connectivity.",
+    "current_progress": "Research direction under development. System architecture, evaluation scenarios, and robustness objectives are being formulated.",
+    "tags": [
+        "Multi-Robot Systems",
+        "Swarm Robotics",
+        "Resilience",
+        "Decentralized Coordination"
+    ],
+    "sections": []
+}

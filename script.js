@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await Promise.all([
         loadProfile(),
-        loadProjects(),
+        Promise.resolve(),
         loadPublications()
     ]);
 });

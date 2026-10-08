@@ -1,0 +1,92 @@
+[
+    {
+        "id": "multi-robot-exploration",
+        "category": "manuscript",
+        "title": "Decentralized Multi-Robot Exploration with Probabilistic Peer Intent and Multi-hop Plan Propagation",
+        "subtitle": "Decentralized exploration with probabilistic peer-intent reasoning",
+        "status": "ICRA 2027 submission · arXiv preprint",
+        "description": "Probabilistic peer-intent modeling and multi-hop plan sharing for communication-constrained multi-robot exploration.",
+        "thumbnail": "assets/images/marvel.png",
+        "file": "publications/multi-robot-exploration.json"
+    },
+    {
+        "id": "persem",
+        "category": "manuscript",
+        "title": "PerSeM: Persistent Semantic Memory for Long-Horizon Open-Vocabulary UAV Mapping",
+        "subtitle": "Persistent 3D semantic memory for aerial perception",
+        "status": "WACV 2027 submission · arXiv preprint",
+        "description": "A training-free persistent semantic memory framework for improving open-vocabulary UAV mapping across repeated observations.",
+        "thumbnail": "",
+        "file": "publications/persem.json"
+    },
+    {
+        "id": "learning-to-fly",
+        "category": "manuscript",
+        "title": "Learning to Fly: Stable Vision-Guided UAV Servoing with Compact Target-Centric Cues and Reinforcement Learning",
+        "subtitle": "Reinforcement learning for long-horizon UAV visual servoing",
+        "status": "ICVGIP 2026 submission · arXiv preprint",
+        "description": "PPO-based UAV visual servoing using compact target-centric observations and visual and dynamics curricula.",
+        "thumbnail": "",
+        "file": "publications/learning-to-fly.json"
+    },
+    {
+        "id": "temporal-semantic-stability",
+        "category": "manuscript",
+        "title": "Understanding Temporal Semantic Stability in Open-Vocabulary UAV Perception through Metric 3D Fusion",
+        "subtitle": "Analyzing semantic stability through persistent world-space observations",
+        "status": "ICVGIP 2026 submission · arXiv preprint",
+        "description": "A voxel-level analysis of semantic belief drift, observation persistence, and temporal consistency in open-vocabulary UAV perception.",
+        "thumbnail": "",
+        "file": "publications/temporal-semantic-stability.json"
+    },
+    {
+        "id": "senet",
+        "category": "ongoing",
+        "title": "SENET",
+        "subtitle": "Selective Semantic Evidence Retention",
+        "status": "Ongoing research",
+        "description": "Memory-efficient semantic mapping through selective retention and allocation of observation histories.",
+        "thumbnail": "",
+        "file": "ongoing/senet.json"
+    },
+    {
+        "id": "learning-where-to-revise",
+        "category": "ongoing",
+        "title": "Learning Where to Revise",
+        "subtitle": "Learned Refinement of Persistent Semantic Memory",
+        "status": "Ongoing research",
+        "description": "Learning when and where persistent semantic representations should be revised.",
+        "thumbnail": "",
+        "file": "ongoing/learning-where-to-revise.json"
+    },
+    {
+        "id": "resilient-swarm",
+        "category": "ongoing",
+        "title": "ResSwarm",
+        "subtitle": "Resilient Decentralized Multi-Robot Coordination",
+        "status": "Ongoing research",
+        "description": "Investigating robust coordination and collective autonomy in multi-robot systems.",
+        "thumbnail": "",
+        "file": "ongoing/resilient-swarm.json"
+    },
+    {
+        "id": "learning-to-disperse-learning-to-reconnect",
+        "category": "ongoing",
+        "title": "Learning to Disperse, Learning to Reconnect",
+        "subtitle": "Communication-Aware Learned Multi-Robot Exploration",
+        "status": "Ongoing research",
+        "description": "Learning to balance spatial exploration with connectivity recovery in decentralized robot teams.",
+        "thumbnail": "",
+        "file": "ongoing/learning-to-disperse-learning-to-reconnect.json"
+    },
+    {
+        "id": "learning-to-fly-ongoing",
+        "category": "ongoing",
+        "title": "Learning to Fly",
+        "subtitle": "Toward Photorealistic Vision-Based UAV Control and Hardware Validation",
+        "status": "Ongoing research",
+        "description": "Extending reinforcement-learning-based UAV visual servoing toward photorealistic simulation and real-world deployment.",
+        "thumbnail": "",
+        "file": "ongoing/learning-to-fly.json"
+    }
+]

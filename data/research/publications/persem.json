@@ -1,0 +1,27 @@
+{
+    "title": "PerSeM: Persistent Semantic Memory for Long-Horizon Open-Vocabulary UAV Mapping",
+    "subtitle": "Persistent 3D semantic memory for aerial perception",
+    "status": "WACV 2027 submission · arXiv preprint",
+    "authors": "Saurbh Singh Jamwal, Ganesh Ramakrishnan",
+    "abstract": "Open-vocabulary segmentation enables detailed semantic perception from UAV imagery, but independent frame-wise predictions can be inconsistent across viewpoints and time. PerSeM addresses this problem using persistent world-space semantic memory. Frame-level predictions are associated with 3D voxels to construct a majority-based semantic representation, which is subsequently refined through history-preserving spatial refinement, trust-aware replay, and context-guided verification. Experiments on Forest and UAVScenes demonstrate that persistent 3D aggregation substantially improves semantic consistency over frame-wise predictions. PerSeM further refines uncertain memory states, with improvements concentrated in challenging and temporally unstable regions, without retraining the segmentation backbone or introducing additional neural-network inference.",
+    "demo": "",
+    "thumbnail": "",
+    "arxiv": "https://arxiv.org/abs/2609.19542",
+    "paper": "",
+    "github": "",
+    "tags": [
+        "Open-Vocabulary Perception",
+        "Semantic Mapping",
+        "3D Memory",
+        "UAV",
+        "Temporal Consistency"
+    ],
+    "sections": [
+        {
+            "title": "Method Overview",
+            "text": "Describe the proposed method.",
+            "image": "",
+            "caption": ""
+        }
+    ]
+}

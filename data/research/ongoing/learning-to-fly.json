@@ -1,0 +1,22 @@
+{
+    "title": "Learning to Fly",
+    "subtitle": "Toward Photorealistic Vision-Based UAV Control and Hardware Validation",
+    "status": "Ongoing research",
+    "architecture_image": "",
+    "architecture_caption": "",
+    "overview": "This project extends our existing reinforcement-learning-based UAV visual-servoing research toward more realistic perception and physical deployment. The objective is to bridge the gap between controlled simulation environments and real-world visual feedback by introducing photorealistic rendering, more realistic observation conditions, and hardware validation.",
+    "current_progress": "The initial visual-servoing framework has been developed and evaluated in simulation. Ongoing work focuses on increasing the photorealism of the simulation environment and preparing for subsequent hardware experiments. Real-world validation is planned and has not yet been completed.",
+    "tags": [
+        "UAV",
+        "Reinforcement Learning",
+        "Visual Servoing",
+        "Sim-to-Real",
+        "Robot Learning"
+    ],
+    "sections": [
+        {
+            "heading": "Next Steps",
+            "content": "Develop a more photorealistic visual simulation pipeline, evaluate the learned controller under realistic observation conditions, and subsequently conduct physical UAV experiments."
+        }
+    ]
+}

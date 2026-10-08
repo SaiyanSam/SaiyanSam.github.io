@@ -1,0 +1,13 @@
+
+# Local development backups
+.navbar_backup_*/
+.ongoing_layout_backup_*/
+.ongoing_projects_backup_*/
+.research_backup_*/
+.research_content_backup_*/
+.research_recovery_backup_*/
+.research_structure_backup_*/
+
+# Python temporary files
+__pycache__/
+*.pyc

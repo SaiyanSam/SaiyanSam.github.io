@@ -1,0 +1,16 @@
+{
+    "title": "Learning to Disperse, Learning to Reconnect",
+    "subtitle": "Communication-Aware Learned Multi-Robot Exploration",
+    "status": "Ongoing research",
+    "architecture_image": "",
+    "architecture_caption": "",
+    "overview": "This research investigates how multi-robot teams can learn to disperse for efficient environment coverage while retaining the ability to reconnect when communication becomes fragmented. The approach explores decentralized decision-making under communication constraints and explicit connectivity recovery.",
+    "current_progress": "Initial simulation experiments have investigated decentralized belief representations, communication connectivity, and reconnection behavior. Current development focuses on learning-based coordination and evaluation under constrained communication.",
+    "tags": [
+        "Multi-Agent Learning",
+        "Decentralized Exploration",
+        "Communication Constraints",
+        "Connectivity Recovery"
+    ],
+    "sections": []
+}

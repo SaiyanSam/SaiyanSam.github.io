@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Saurbh Singh Jamwal</title>
+
+    <link rel="stylesheet" href="base.css">
+
+    <link id="theme-stylesheet" rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            const theme = localStorage.getItem("portfolio-theme") ||
+                (matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark" : "light");
+
+            document.documentElement.dataset.theme = theme;
+
+            document.getElementById("theme-stylesheet").href =
+                theme === "dark" ? "style_dark.css" : "style.css";
+        })();
+    </script>
+
+    <link rel="stylesheet" href="research.css">
+    <script src="research_nav.js" defer></script>
+    <script src="research.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <!-- Left -->
+            <a href="index.html#research" id="nav-name">← Back to Research</a>
+
+            <!-- Centre -->
+            <div
+                class="theme-switcher"
+                aria-label="Website colour theme"
+            >
+                <button
+                    class="theme-option"
+                    id="light-theme-option"
+                    type="button"
+                    data-theme-option="light"
+                    aria-label="Use light theme"
+                >
+                    Light
+                </button>
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    role="switch"
+                    aria-checked="false"
+                    aria-label="Switch to dark theme"
+                    title="Switch theme"
+                >
+                    <span
+                        class="theme-toggle-track"
+                        aria-hidden="true"
+                    >
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+
+                <button
+                    class="theme-option"
+                    id="dark-theme-option"
+                    type="button"
+                    data-theme-option="dark"
+                    aria-label="Use dark theme"
+                >
+                    Dark
+                </button>
+            </div>
+
+            <!-- Right -->
+            <div class="nav-actions">
+                <div
+                    class="nav-links"
+                    id="nav-links"
+                >
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#manuscripts">Manuscripts</a>
+                    <a href="index.html#ongoing-projects">Ongoing Projects</a>
+                    
+                </div>
+
+                <button
+                    class="menu-button"
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="research-detail-container">
+        <div id="research-detail-root">
+            <p>Loading research...</p>
+        </div>
+    </main>
+
+</body>
+</html>

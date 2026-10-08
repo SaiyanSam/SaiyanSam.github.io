@@ -1,0 +1,16 @@
+{
+    "title": "Learning Where to Revise",
+    "subtitle": "Learned Refinement of Persistent Semantic Memory",
+    "status": "Ongoing research",
+    "architecture_image": "",
+    "architecture_caption": "",
+    "overview": "This project investigates learned revision of persistent 3D semantic representations. Rather than uniformly updating semantic memory, the proposed direction explores identifying regions where semantic evidence is uncertain, inconsistent, or likely to benefit from further refinement.",
+    "current_progress": "The research direction builds on previous investigations of temporal semantic stability and persistent semantic memory. Current work focuses on motivating the revision mechanism, designing the architecture, and defining experiments and ablations.",
+    "tags": [
+        "Semantic Memory",
+        "Robot Perception",
+        "Open-Vocabulary Segmentation",
+        "Learning"
+    ],
+    "sections": []
+}

@@ -1,0 +1,27 @@
+{
+    "title": "Learning to Fly: Stable Vision-Guided UAV Servoing with Compact Target-Centric Cues and Reinforcement Learning",
+    "subtitle": "Reinforcement learning for long-horizon UAV visual servoing",
+    "status": "ICVGIP 2026 submission · arXiv preprint",
+    "authors": "Saurbh Singh Jamwal, Nived Chebrolu",
+    "abstract": "This work studies long-horizon vision-guided UAV servoing using compact target-centric observations rather than raw RGB inputs to the control policy. Target segmentation supplies image-space offsets and relative depth, which are combined with proprioceptive measurements into a 12-dimensional policy observation. We compare Direct PPO training against Visual, Dynamics, and Joint curriculum strategies under matched training budgets. Observation ablations examine the importance of visual alignment cues, depth, and proprioception. Experiments also compare learned policies with tuned classical visual-servo controllers under visual and control perturbations. The findings highlight the effectiveness of compact representations and the robustness benefits of visual curriculum learning under changing target motion.",
+    "demo": "assets/videos/learning-to-fly.mp4",
+    "thumbnail": "",
+    "arxiv": "https://arxiv.org/abs/2609.09234",
+    "paper": "",
+    "github": "",
+    "tags": [
+        "Reinforcement Learning",
+        "UAV",
+        "Visual Servoing",
+        "PPO",
+        "Curriculum Learning"
+    ],
+    "sections": [
+        {
+            "title": "Method Overview",
+            "text": "Describe the proposed method.",
+            "image": "",
+            "caption": ""
+        }
+    ]
+}

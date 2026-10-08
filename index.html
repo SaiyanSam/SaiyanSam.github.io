@@ -51,6 +51,7 @@
                     : "style.css";
         })();
     </script>
+    <link rel="stylesheet" href="research.css">
 </head>
 
 <body>
@@ -115,9 +116,9 @@
                     id="nav-links"
                 >
                     <a href="#about">About</a>
-                    <a href="#research">Research</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#manuscripts">Manuscripts</a>
+                    <a href="#ongoing-projects">Ongoing Projects</a>
+                    
                 </div>
 
                 <button
@@ -226,67 +227,31 @@
                     Research and projects
                 </h2>
 
-                <div
-                    class="project-grid"
-                    id="project-grid"
-                >
-                    <p>Loading projects...</p>
+                
+                <div class="research-section" id="manuscripts">
+                    <div class="research-section-header">
+                        <h3>Public Research Manuscripts</h3>
+                        <p>Research manuscripts and publicly available preprints.</p>
+                    </div>
+                    <div id="manuscript-grid" class="research-card-grid"></div>
                 </div>
+
+                <div class="research-section" id="ongoing-projects">
+                    <div class="research-section-header">
+                        <h3>Ongoing Projects</h3>
+                        <p>Current research directions and ongoing development.</p>
+                    </div>
+                    <div id="ongoing-project-grid" class="research-card-grid"></div>
+                </div>
+
             </div>
         </section>
 
         <!-- Publications -->
-        <section
-            class="section section-muted"
-            id="publications"
-        >
-            <div class="container narrow-container">
-                <p class="section-label">
-                    Research output
-                </p>
-
-                <h2>
-                    Publications and preprints
-                </h2>
-
-                <div
-                    class="publication-list"
-                    id="publication-list"
-                >
-                    <p>Loading publications...</p>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Contact -->
-        <section
-            class="section contact-section"
-            id="contact"
-        >
-            <div class="container narrow-container">
-                <p class="section-label">
-                    Contact
-                </p>
-
-                <h2>
-                    Let us connect
-                </h2>
-
-                <p>
-                    I am interested in research opportunities and
-                    collaborations in machine learning, computer vision,
-                    robot perception, and autonomous systems.
-                </p>
-
-                <a
-                    class="primary-button"
-                    id="contact-email"
-                    href="#"
-                >
-                    Email me
-                </a>
-            </div>
-        </section>
+        
     </main>
 
     <footer>
@@ -303,5 +268,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="research.js" defer></script>
 </body>
 </html>

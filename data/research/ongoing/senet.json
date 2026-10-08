@@ -1,0 +1,15 @@
+{
+    "title": "Selective Semantic Evidence Retention",
+    "subtitle": "Memory-efficient persistent semantic mapping",
+    "status": "Ongoing research",
+    "architecture_image": "assets/images/senet-architecture.png",
+    "architecture_caption": "Proposed framework for selective semantic evidence retention.",
+    "overview": "This project investigates how persistent semantic mapping systems can selectively retain useful observation histories under constrained memory budgets.",
+    "current_progress": "Implemented and evaluated initial retention baselines, including FIFO, reservoir sampling, and confidence-based selection. Current work focuses on characterizing the value of retained observations and evaluating memory allocation strategies.",
+    "tags": [
+        "Semantic Mapping",
+        "Memory Compression",
+        "3D Perception"
+    ],
+    "sections": []
+}
