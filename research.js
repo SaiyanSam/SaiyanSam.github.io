@@ -104,10 +104,12 @@ async function fetchJSON(path) {
 }
 
 async function loadResearchTiles() {
-    const manuscripts = document.getElementById("manuscript-grid");
+    const spotlight = document.getElementById("manuscript-grid");
+    const others = document.getElementById("other-manuscript-grid");
     const ongoing = document.getElementById("ongoing-project-grid");
 
-    if (!manuscripts || !ongoing) return;
+    // This function also runs on research detail pages.
+    if (!spotlight || !others || !ongoing) return;
 
     try {
         const entries = await fetchJSON(RESEARCH_INDEX);
@@ -116,28 +118,17 @@ async function loadResearchTiles() {
             throw new Error("Research index must be an array");
         }
 
-        const manuscriptEntries = entries.filter(
-            item => item.category === "manuscript"
-        );
-
-        const ongoingEntries = entries.filter(
-            item => item.category === "ongoing"
-        );
-
-        manuscripts.innerHTML = manuscriptEntries.length
-            ? manuscriptEntries.map(tileHTML).join("")
-            : "<p>Research manuscripts will appear here.</p>";
-
-        ongoing.innerHTML = ongoingEntries.length
-            ? ongoingEntries.map(tileHTML).join("")
-            : "<p>Ongoing projects will appear here.</p>";
+        renderResearchHomepageGroups(entries);
 
     } catch (error) {
-        console.error(error);
-        manuscripts.textContent = "Unable to load manuscripts.";
+        console.error("Unable to load research index:", error);
+
+        spotlight.textContent = "Unable to load research spotlight.";
+        others.textContent = "Unable to load other manuscripts.";
         ongoing.textContent = "Unable to load ongoing projects.";
     }
 }
+
 
 function resourceHTML(label, value) {
     const url = safeURL(value);
@@ -339,3 +330,71 @@ document.addEventListener("DOMContentLoaded", () => {
     loadResearchTiles();
     loadResearchDetail();
 });
+
+
+/* HOMEPAGE RESEARCH REDESIGN */
+
+function renderResearchHomepageGroups(entries) {
+    const spotlight = document.getElementById("manuscript-grid");
+    const others = document.getElementById("other-manuscript-grid");
+    const ongoing = document.getElementById("ongoing-project-grid");
+
+    if (!spotlight || !others || !ongoing) return;
+
+    const manuscripts = entries.filter(
+        entry => entry.category === "manuscript"
+    );
+
+    const projects = entries.filter(
+        entry => entry.category === "ongoing"
+    );
+
+    // Reuse existing manuscript cards.
+    spotlight.innerHTML = manuscripts
+        .filter(entry => entry.featured)
+        .map(entry => tileHTML(entry))
+        .join("");
+
+    others.innerHTML = manuscripts
+        .filter(entry => !entry.featured)
+        .map(entry => tileHTML(entry))
+        .join("");
+
+    // Compact ongoing-project cards.
+    ongoing.innerHTML = projects.map(entry => {
+        const title = escapeHTML(entry.title || "");
+        const subtitle = escapeHTML(entry.subtitle || "");
+        const image = safeURL(entry.thumbnail || "");
+        const href = `research.html?id=${encodeURIComponent(entry.id)}`;
+
+        const keywords = Array.isArray(entry.keywords)
+            ? entry.keywords
+            : [];
+
+        const keywordText = keywords.length
+            ? keywords.join(" · ")
+            : subtitle;
+
+        return `
+            <a class="ongoing-compact-card" href="${href}">
+                <div class="ongoing-compact-image">
+                    ${image
+                        ? `<img src="${escapeHTML(image)}"
+                                alt="${title} project image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                           <span class="ongoing-image-fallback"
+                                 style="display:none">Image coming soon</span>`
+                        : `<span class="ongoing-image-fallback">
+                               Image coming soon
+                           </span>`
+                    }
+                </div>
+
+                <div class="ongoing-compact-content">
+                    <h4>${title}</h4>
+                    <p>${escapeHTML(keywordText)}</p>
+                </div>
+            </a>
+        `;
+    }).join("");
+}
