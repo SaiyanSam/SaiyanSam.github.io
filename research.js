@@ -181,6 +181,7 @@ function detailHTML(item, category = "manuscript") {
 
     if (category === "ongoing") {
         const architecture = safeURL(item.architecture_image);
+        const video = safeURL(item.video);
         const overview = item.overview || item.abstract || "";
         const progress = item.current_progress || "";
 
@@ -198,7 +199,22 @@ function detailHTML(item, category = "manuscript") {
 
                 ${tagsHTML(item.tags)}
 
-                <figure class="ongoing-architecture">
+                ${item.github
+                    ? `<div class="research-resources">
+                           ${resourceHTML("GitHub", item.github)}
+                       </div>`
+                    : ""}
+
+                ${video
+                    ? `<div class="ongoing-project-video">
+                           <video controls playsinline preload="metadata">
+                               <source src="${escapeHTML(video)}" type="video/mp4">
+                               Your browser does not support HTML5 video.
+                           </video>
+                       </div>`
+                    : ""}
+
+                ${!video ? `<figure class="ongoing-architecture">` : `<!--`}
                     ${architecture
                         ? `<img src="${escapeHTML(architecture)}"
                                 alt="${escapeHTML(item.title)} architecture">`
@@ -209,7 +225,7 @@ function detailHTML(item, category = "manuscript") {
                     ${item.architecture_caption
                         ? `<figcaption>${escapeHTML(item.architecture_caption)}</figcaption>`
                         : ""}
-                </figure>
+                ${!video ? `</figure>` : `-->`}
 
                 <div class="ongoing-information">
                     <section class="ongoing-overview">

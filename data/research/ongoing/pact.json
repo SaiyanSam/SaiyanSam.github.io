@@ -1,0 +1,16 @@
+{
+  "title": "PACT",
+  "subtitle": "Decentralized Dynamic Task Commitment and Reassignment",
+  "status": "Ongoing research",
+  "overview": "PACT investigates decentralized task commitment and reassignment in heterogeneous robot teams operating under dynamically arriving tasks, deadlines, and changing robot availability. The research considers multirotor UAVs, fixed-wing UAVs, and UGVs with different mobility and servicing capabilities. Its central objective is to develop coordination strategies that adapt commitments while accounting for task urgency, accumulated service progress, and interruption-related losses.",
+  "current_progress": "We have developed HATSim, an open-source simulation framework for heterogeneous multi-robot task servicing. The simulator provides the foundation for studying dynamic task arrivals, robot-specific capabilities, task deadlines, retained service progress, and reassignment. The simulation infrastructure is publicly available, while the development and evaluation of decentralized commitment policies and comparative experiments remain ongoing.",
+  "video": "assets/projects/pact/HATSim.mp4",
+  "github": "https://github.com/SaiyanSam/HATSim",
+  "tags": [
+    "Multi-Robot Systems",
+    "Heterogeneous Teams",
+    "Decentralized Coordination",
+    "Dynamic Task Allocation"
+  ],
+  "sections": []
+}

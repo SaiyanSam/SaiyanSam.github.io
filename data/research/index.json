@@ -37,7 +37,7 @@
     "category": "manuscript",
     "title": "Understanding Temporal Semantic Stability in Open-Vocabulary UAV Perception through Metric 3D Fusion",
     "subtitle": "Analyzing semantic stability through persistent world-space observations",
-    "status": "arXiv preprint",
+    "status": "Accepted at ICVGIP 2026",
     "description": "A voxel-level analysis of semantic belief drift, observation persistence, and temporal consistency in open-vocabulary UAV perception.",
     "thumbnail": "assets/projects/temporal-stability/thumbnail.png",
     "file": "publications/temporal-semantic-stability.json",
@@ -54,24 +54,29 @@
     "file": "ongoing/senet.json"
   },
   {
-    "id": "learning-where-to-revise",
+    "id": "pact",
     "category": "ongoing",
-    "title": "Learning Where to Revise",
-    "subtitle": "Learned Refinement of Persistent Semantic Memory",
+    "title": "PACT",
+    "subtitle": "Decentralized Dynamic Task Commitment and Reassignment",
     "status": "Ongoing research",
-    "description": "Learning when and where persistent semantic representations should be revised.",
-    "thumbnail": "assets/projects/learning-where-to-revise/thumbnail.png",
-    "file": "ongoing/learning-where-to-revise.json"
+    "description": "Decentralized task commitment and reassignment for heterogeneous robot teams, supported by the open-source HATSim simulator.",
+    "keywords": [
+      "Heterogeneous Multi-Robot Systems",
+      "Dynamic Task Allocation",
+      "Decentralized Coordination"
+    ],
+    "thumbnail": "assets/projects/pact/thumbnail.png",
+    "file": "ongoing/pact.json"
   },
   {
-    "id": "resilient-swarm",
+    "id": "learning-to-fly-ongoing",
     "category": "ongoing",
-    "title": "ResSwarm",
-    "subtitle": "Resilient Decentralized Multi-Robot Coordination",
+    "title": "Learning to Fly",
+    "subtitle": "Toward Photorealistic Vision-Based UAV Control and Hardware Validation",
     "status": "Ongoing research",
-    "description": "Investigating robust coordination and collective autonomy in multi-robot systems.",
-    "thumbnail": "assets/projects/resilient-swarm/thumbnail.png",
-    "file": "ongoing/resilient-swarm.json"
+    "description": "Extending reinforcement-learning-based UAV visual servoing toward photorealistic simulation and real-world deployment.",
+    "thumbnail": "assets/projects/learning-to-fly/thumbnail.png",
+    "file": "ongoing/learning-to-fly.json"
   },
   {
     "id": "learning-to-disperse-learning-to-reconnect",
@@ -84,13 +89,23 @@
     "file": "ongoing/learning-to-disperse-learning-to-reconnect.json"
   },
   {
-    "id": "learning-to-fly-ongoing",
+    "id": "resilient-swarm",
     "category": "ongoing",
-    "title": "Learning to Fly",
-    "subtitle": "Toward Photorealistic Vision-Based UAV Control and Hardware Validation",
+    "title": "ResSwarm",
+    "subtitle": "Resilient Decentralized Multi-Robot Coordination",
     "status": "Ongoing research",
-    "description": "Extending reinforcement-learning-based UAV visual servoing toward photorealistic simulation and real-world deployment.",
-    "thumbnail": "assets/projects/learning-to-fly/thumbnail.png",
-    "file": "ongoing/learning-to-fly.json"
+    "description": "Investigating robust coordination and collective autonomy in multi-robot systems.",
+    "thumbnail": "assets/projects/resilient-swarm/thumbnail.png",
+    "file": "ongoing/resilient-swarm.json"
+  },
+  {
+    "id": "learning-where-to-revise",
+    "category": "ongoing",
+    "title": "Learning Where to Revise",
+    "subtitle": "Learned Refinement of Persistent Semantic Memory",
+    "status": "Ongoing research",
+    "description": "Learning when and where persistent semantic representations should be revised.",
+    "thumbnail": "assets/projects/learning-where-to-revise/thumbnail.png",
+    "file": "ongoing/learning-where-to-revise.json"
   }
 ]
