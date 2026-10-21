@@ -117,10 +117,6 @@ function renderSocialLinks(profile) {
 
     const links = [
         {
-            label: "CV",
-            url: profile.cv
-        },
-        {
             label: "Google Scholar",
             url: profile.scholar
         },

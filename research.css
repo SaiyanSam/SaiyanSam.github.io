@@ -462,3 +462,32 @@
     border-radius: 12px;
     background: #000;
 }
+
+/* Accepted manuscript status */
+.research-status-accepted {
+    color: #15803d !important;
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+    .research-status-accepted {
+        color: #4ade80 !important;
+    }
+}
+
+/* Hobbies */
+.hobby-card {
+    margin-top: 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid var(--border-color, #d1d5db);
+    border-radius: 14px;
+}
+
+.hobby-content h3 {
+    margin: 0 0 0.75rem;
+}
+
+.hobby-content p {
+    margin: 0;
+    line-height: 1.7;
+}

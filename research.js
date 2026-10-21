@@ -75,7 +75,7 @@ function tileHTML(item) {
             </div>
 
             <div class="research-tile-body">
-                <span class="research-status">
+                <span class="research-status ${/^accepted\b/i.test(item.status || "") ? "research-status-accepted" : ""}">
                     ${escapeHTML(item.status)}
                 </span>
 
