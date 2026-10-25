@@ -491,3 +491,70 @@
     margin: 0;
     line-height: 1.7;
 }
+
+/* Accepted conference status on manuscript detail pages */
+.research-detail-meta .research-status-accepted {
+    color: #15803d !important;
+    font-weight: 700;
+    opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .research-detail-meta .research-status-accepted {
+        color: #4ade80 !important;
+    }
+}
+
+/* Clickable Liftoff hobby card */
+.hobby-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobby-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px #0002;
+}
+
+.hobby-link:focus-visible {
+    outline: 3px solid var(--accent-color, #2563eb);
+    outline-offset: 3px;
+}
+
+/* Liftoff homepage card: image left, description right */
+.hobby-card.hobby-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hobby-thumbnail {
+    display: block;
+    width: 260px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.hobby-card .hobby-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    .hobby-card.hobby-link {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+    }
+
+    .hobby-thumbnail {
+        width: 100%;
+        max-height: 260px;
+        object-fit: contain;
+    }
+}

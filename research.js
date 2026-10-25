@@ -258,13 +258,15 @@ function detailHTML(item, category = "manuscript") {
             <p class="research-detail-meta">
                 ${escapeHTML(item.subtitle || "")}
                 ${item.subtitle && item.status ? " · " : ""}
-                ${escapeHTML(item.status || "")}
+                <span class="${/^accepted\b/i.test(item.status || "") ? "research-status-accepted" : ""}">
+                    ${escapeHTML(item.status || "")}
+                </span>
             </p>
 
             <div class="research-resources">
                 ${resourceHTML("arXiv", item.arxiv)}
-                ${resourceHTML("Paper", item.paper)}
                 ${resourceHTML("GitHub", item.github)}
+                ${item.paper_coming_soon || item.paper ? resourceHTML("Paper", item.paper) : ""}
             </div>
 
             <div class="research-intro">

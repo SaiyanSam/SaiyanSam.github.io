@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liftoff — FPV Drone Racing</title>
+    <link rel="stylesheet" href="base.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            const theme = localStorage.getItem("portfolio-theme") ||
+                (matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark" : "light");
+
+            document.documentElement.dataset.theme = theme;
+
+            document.getElementById("theme-stylesheet").href =
+                theme === "dark" ? "style_dark.css" : "style.css";
+        })();
+    </script>
+
+    <link rel="stylesheet" href="research.css">
+    <link rel="stylesheet" href="liftoff.css">
+    <script src="research_nav.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <!-- Left -->
+            <a href="index.html#hobbies" id="nav-name">← Back to Hobbies</a>
+
+            <!-- Centre -->
+            <div
+                class="theme-switcher"
+                aria-label="Website colour theme"
+            >
+                <button
+                    class="theme-option"
+                    id="light-theme-option"
+                    type="button"
+                    data-theme-option="light"
+                    aria-label="Use light theme"
+                >
+                    Light
+                </button>
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    role="switch"
+                    aria-checked="false"
+                    aria-label="Switch to dark theme"
+                    title="Switch theme"
+                >
+                    <span
+                        class="theme-toggle-track"
+                        aria-hidden="true"
+                    >
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+
+                <button
+                    class="theme-option"
+                    id="dark-theme-option"
+                    type="button"
+                    data-theme-option="dark"
+                    aria-label="Use dark theme"
+                >
+                    Dark
+                </button>
+            </div>
+
+            <!-- Right -->
+            <div class="nav-actions">
+                <div
+                    class="nav-links"
+                    id="nav-links"
+                >
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#manuscripts">Manuscripts</a>
+                    <a href="index.html#ongoing-projects">Ongoing Projects</a>
+                    
+                </div>
+
+                <button
+                    class="menu-button"
+                    id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container liftoff-page">
+        <section class="liftoff-intro">
+            <img src="assets/hobbies/liftoff/thumbnail.png"
+                 alt="Liftoff FPV drone racing"
+                 class="liftoff-thumbnail">
+
+            <div class="liftoff-intro-text">
+                <p class="liftoff-eyebrow">HOBBIES & INTERESTS</p>
+                <h1>Liftoff — FPV Drone Racing</h1>
+                <p>
+                    In my free time, I love flying FPV drones in Liftoff.
+                    I enjoy improving my racing skills and have achieved
+                    top-100 all-time lap times on several tracks.
+                </p>
+            </div>
+        </section>
+
+        <section class="liftoff-section">
+            <h2>My Lap Times</h2>
+            <p>A selection of my leaderboard results across different tracks.</p>
+
+            <div class="liftoff-gallery" aria-label="Lap-time screenshots">
+                <button class="gallery-arrow gallery-prev"
+                        aria-label="Previous screenshot"></button>
+
+                <img id="lap-image" src="" alt="Liftoff leaderboard screenshot">
+
+                <button class="gallery-arrow gallery-next"
+                        aria-label="Next screenshot"></button>
+                <div id="lap-dots" class="gallery-dots"></div>
+            </div>
+
+            <div class="gallery-footer">
+                <span id="lap-caption"></span>
+                <span id="lap-counter"></span>
+            </div>
+
+            
+        </section>
+
+        <section class="liftoff-section">
+            <h2>Flight Recordings</h2>
+            <p>Some of my flights and racing sessions in Liftoff.</p>
+
+            <div class="liftoff-video-grid">
+                <div class="liftoff-video-card">
+                    <video controls playsinline preload="metadata"
+                           src="assets/hobbies/liftoff/videos/flight-01.mp4"></video>
+                    <h3>Flight 01</h3>
+                </div>
+
+                <div class="liftoff-video-card">
+                    <video controls playsinline preload="metadata"
+                           src="assets/hobbies/liftoff/videos/flight-02.mp4"></video>
+                    <h3>Flight 02</h3>
+                </div>
+
+                <div class="liftoff-video-card">
+                    <video controls playsinline preload="metadata"
+                           src="assets/hobbies/liftoff/videos/flight-03.mp4"></video>
+                    <h3>Flight 03</h3>
+                </div>
+
+                <div class="liftoff-video-card">
+                    <video controls playsinline preload="metadata"
+                           src="assets/hobbies/liftoff/videos/flight-04.mp4"></video>
+                    <h3>Flight 04</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="liftoff.js" defer></script>
+</body>
+</html>

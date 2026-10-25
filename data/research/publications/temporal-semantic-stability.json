@@ -7,8 +7,7 @@
   "demo": "",
   "thumbnail": "",
   "arxiv": "https://arxiv.org/abs/2608.28665",
-  "paper": "",
-  "github": "",
+  "github": "https://github.com/SaiyanSam/TeSS-UAV",
   "tags": [
     "Open-Vocabulary Segmentation",
     "Temporal Stability",
